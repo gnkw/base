@@ -121,7 +121,7 @@ class Terminal {
 		else{
 			$message = "Create class : \n======\n";
 			$message .= $stringFile;
-			$message .= "\n=====\nto : ".realpath($path).$classname.".php";
+			$message .= "\n=====\nto : ".realpath($path).'/'.$classname.".php";
 			return $message;
 		}
 		return '[Error] Error when creating class';
@@ -163,7 +163,7 @@ class Terminal {
 		else{
 			$message = "Create test class : \n======\n";
 			$message .= $stringFile;
-			$message .= "\n=====\nto : ".realpath($path).$classname."Test.php";
+			$message .= "\n=====\nto : ".realpath($path).'/'.$classname."Test.php";
 			return $message;
 		}
 		return '[Error] Error when creating class';
