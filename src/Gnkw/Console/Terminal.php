@@ -152,7 +152,7 @@ class Terminal {
 		{
 			return "[Warning] The class \"$classname\" don't exist for the namespace \"$namespace\", so you can't create a test class from it";
 		}
-		if(is_file("$path/".$classname."Test.test.php"))
+		if(is_file("$path/".$classname."Test.php"))
 		{
 			return '[Warning] The class "'.$classname.'Test" already exist for the namespace "'.$namespace.'"';
 		}
